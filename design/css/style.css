@@ -16,6 +16,23 @@ body {
   font-size: 1.6rem;
 }
 
+h1,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  padding: 1.4rem 2.2rem;
+  border-radius: 23px;
+  background: linear-gradient(176deg, #ff79da, #9356dc);
+  color: #fff;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -39,6 +56,25 @@ aside .localisation {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+}
+
+.hero-header {
+  padding: 4.9rem 4rem;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.hero-header h1 {
+  margin-bottom: 1.5rem;
+}
+.hero-header p {
+  margin-bottom: 4rem;
+}
+.hero-header .btn {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.hero-header .btn a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

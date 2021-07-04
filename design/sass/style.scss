@@ -22,6 +22,24 @@ body {
   font-size: 1.6rem;
 }
 
+// COMMUN
+h1,
+p {
+  font-family: $font-family-roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: $font-family-roboto;
+  padding: 1.4rem 2.2rem;
+  border-radius: 23px;
+  background: linear-gradient(176deg, $secondary-color, $primary-color);
+  color: #fff;
+}
+
 // HEADER
 header {
   display: flex;
@@ -33,9 +51,11 @@ header {
   }
 }
 
+// ASIDE
+
 aside {
   padding: 1.5rem 0;
-  background-color: $background-light;
+  background-color: $background-dark;
   box-shadow: inset 0px 11px 8px -10px #ccc;
 
   .icone-map {
@@ -47,6 +67,31 @@ aside {
   .localisation {
     display: flex;
     justify-content: center;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-family-roboto;
+  }
+}
+
+// HERO-HEADER
+
+.hero-header {
+  padding: 4.9rem 4rem;
+  background-color: $background-light;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: #fff;
+    }
   }
 }
