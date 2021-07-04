@@ -1,0 +1,44 @@
+/* CONFIG NAVIGATEUR */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1.5rem 0;
+}
+header img {
+  width: 16rem;
+}
+
+aside {
+  padding: 1.5rem 0;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 11px 8px -10px #ccc;
+}
+aside .icone-map {
+  width: 1.2rem;
+  position: absolute;
+  margin-left: calc(50% - 8.1rem);
+}
+aside .localisation {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

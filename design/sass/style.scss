@@ -1,0 +1,52 @@
+@import "variables";
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Shrikhand', cursive;
+
+/* CONFIG NAVIGATEUR */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+// HEADER
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1.5rem 0;
+
+  img {
+    width: 16rem;
+  }
+}
+
+aside {
+  padding: 1.5rem 0;
+  background-color: $background-light;
+  box-shadow: inset 0px 11px 8px -10px #ccc;
+
+  .icone-map {
+    width: 1.2rem;
+    position: absolute;
+    margin-left: calc(50% - 8.1rem);
+  }
+
+  .localisation {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+  }
+}
