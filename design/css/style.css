@@ -93,13 +93,61 @@ aside .localisation {
 }
 .fonctionnement ol {
   margin-left: 1rem;
+  position: relative;
+  font-weight: bold;
+}
+.fonctionnement ol span {
+  position: absolute;
+  color: #fff;
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 0.6rem;
+  transform: translateX(-13px);
+  margin-top: 1.7rem;
+  font-size: 1.2rem;
 }
 .fonctionnement ol li {
-  padding: 2rem 0 2rem 8rem;
+  padding: 2rem 0 2rem 3rem;
   margin-bottom: 2rem;
   border-radius: 18px;
   background-color: #f6f6f6;
   box-shadow: 0px 2px 5px 2px #ccc;
+}
+.fonctionnement ol li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/mobile-alt-solid.svg");
+  background-size: 1.7rem 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+  transform: translateY(2px);
+}
+.fonctionnement ol li:nth-child(4)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/list-ul-solid.svg");
+  background-size: 1.7rem 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+  transform: translateY(2px);
+}
+.fonctionnement ol li:nth-child(6)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/store-solid.svg");
+  background-size: 1.7rem 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+  transform: translateY(2px);
+}
+.fonctionnement ol li:nth-child(6) {
+  background-color: #f5edff;
 }
 
 /*# sourceMappingURL=style.css.map */
