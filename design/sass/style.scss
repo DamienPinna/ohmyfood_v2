@@ -24,6 +24,9 @@ body {
 
 // COMMUN
 h1,
+h2,
+h3,
+ol,
 p {
   font-family: $font-family-roboto;
 }
@@ -32,12 +35,17 @@ a {
   text-decoration: none;
 }
 
+ol {
+  list-style-type: none;
+}
+
 .btn {
   font-family: $font-family-roboto;
   padding: 1.4rem 2.2rem;
   border-radius: 23px;
   background: linear-gradient(176deg, $secondary-color, $primary-color);
   color: #fff;
+  box-shadow: $box-shadow;
 }
 
 // HEADER
@@ -55,7 +63,7 @@ header {
 
 aside {
   padding: 1.5rem 0;
-  background-color: $background-dark;
+  background-color: $background-grey-dark;
   box-shadow: inset 0px 11px 8px -10px #ccc;
 
   .icone-map {
@@ -75,7 +83,7 @@ aside {
 
 .hero-header {
   padding: 4.9rem 4rem;
-  background-color: $background-light;
+  background-color: $background-grey-light;
   text-align: center;
 
   h1 {
@@ -92,6 +100,28 @@ aside {
 
     a {
       color: #fff;
+    }
+  }
+}
+
+// FONCTIONNEMENT
+
+.fonctionnement {
+  margin: 4.9rem 1.5rem;
+
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  ol {
+    margin-left: 1rem;
+
+    li {
+      padding: 2rem 0 2rem 8rem;
+      margin-bottom: 2rem;
+      border-radius: 18px;
+      background-color: $background-grey-light;
+      box-shadow: $box-shadow;
     }
   }
 }
