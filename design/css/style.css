@@ -81,6 +81,9 @@ aside .localisation {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+.hero-header .btn:hover {
+  filter: brightness(105%);
+}
 .hero-header .btn a {
   color: #fff;
 }
@@ -95,6 +98,7 @@ aside .localisation {
   margin-left: 1rem;
   position: relative;
   font-weight: bold;
+  user-select: none;
 }
 .fonctionnement ol span {
   position: absolute;
@@ -187,10 +191,21 @@ aside .localisation {
 .restaurants .cards .card .card-footer .card-favorite input {
   display: none;
 }
+.restaurants .cards .card .card-footer .card-favorite input:checked + label {
+  content: "";
+  display: block;
+  background-image: url(../../images/icones/heart-solid.svg);
+  background-size: 2.8rem 2.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.restaurants .cards .card .card-footer .card-favorite input:checked + label::before {
+  opacity: 0;
+}
 .restaurants .cards .card .card-footer .card-favorite label {
   cursor: pointer;
 }
-.restaurants .cards .card .card-footer .card-favorite label:before {
+.restaurants .cards .card .card-footer .card-favorite label::before {
   content: "";
   display: block;
   background-image: url(../../images/icones/heart-regular.svg);
