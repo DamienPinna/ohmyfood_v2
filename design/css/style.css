@@ -86,7 +86,7 @@ aside .localisation {
 }
 
 .fonctionnement {
-  margin: 4.9rem 1.5rem;
+  margin: 4.9rem 1.5rem 6.5rem 1.5rem;
 }
 .fonctionnement h2 {
   margin-bottom: 2.5rem;
@@ -148,6 +148,55 @@ aside .localisation {
 }
 .fonctionnement ol li:nth-child(6) {
   background-color: #f5edff;
+}
+
+.restaurants {
+  padding: 4.9rem 1.5rem;
+  background-color: #f6f6f6;
+}
+.restaurants h2 {
+  margin-bottom: 2.5rem;
+}
+.restaurants .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.restaurants .cards .card {
+  border-radius: 10px;
+  color: inherit;
+  background-color: #fff;
+}
+.restaurants .cards .card .card-img {
+  height: 19.2rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.restaurants .cards .card .card-footer {
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-between;
+}
+.restaurants .cards .card .card-footer .card-content {
+  font-family: "Roboto", sans-serif;
+}
+.restaurants .cards .card .card-footer .card-favorite {
+  display: flex;
+  align-items: center;
+}
+.restaurants .cards .card .card-footer .card-favorite input {
+  display: none;
+}
+.restaurants .cards .card .card-footer .card-favorite label {
+  cursor: pointer;
+}
+.restaurants .cards .card .card-footer .card-favorite label:before {
+  content: "";
+  display: block;
+  background-image: url(../../images/icones/heart-regular.svg);
+  background-size: 2.8rem 2.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
