@@ -1,11 +1,11 @@
 // Ajout d'une icone dans un pseudo-élément before
-@mixin icone($url, $dimension) {
+@mixin icone($url, $dimension, $margin-right, $translateY) {
   content: "";
   display: inline-block;
   background-image: url($url);
   background-size: $dimension $dimension;
   height: $dimension;
   width: $dimension;
-  margin-right: 2rem;
-  transform: translateY(2px);
+  margin-right: $margin-right;
+  transform: translateY($translateY);
 }
