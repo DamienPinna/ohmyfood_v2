@@ -1,0 +1,18 @@
+// HEADER DES PAGES
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1.5rem 0;
+  position: relative;
+
+  img {
+    &:nth-child(1) {
+      position: absolute;
+      width: 2rem;
+      left: 3rem;
+    }
+    &:nth-child(2) {
+      width: 16rem;
+    }
+  }
+}

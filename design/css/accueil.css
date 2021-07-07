@@ -16,6 +16,53 @@ body {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+footer {
+  padding: 2.5rem 1.5rem;
+  color: #fff;
+  background-color: #353535;
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+}
+footer ul li {
+  margin-bottom: 0.8rem;
+}
+footer ul li:nth-child(1) a::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/utensils-solid.svg");
+  background-size: 1.5rem 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1.2rem;
+  transform: translateY(0px);
+}
+footer ul li:nth-child(2) a::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/hands-helping-solid.svg");
+  background-size: 1.5rem 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1.2rem;
+  transform: translateY(2px);
+}
+footer ul li a {
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -24,15 +71,6 @@ span,
 a,
 p {
   font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-ol,
-ul {
-  list-style-type: none;
 }
 
 .btn {
@@ -232,42 +270,4 @@ aside .localisation {
   width: 2.8rem;
 }
 
-footer {
-  padding: 2.5rem 1.5rem;
-  color: #fff;
-  background-color: #353535;
-}
-footer h4 {
-  font-family: "Shrikhand", cursive;
-  font-weight: lighter;
-  margin-bottom: 1.5rem;
-  font-size: 1.9rem;
-}
-footer ul li {
-  margin-bottom: 0.8rem;
-}
-footer ul li:nth-child(1) a::before {
-  content: "";
-  display: inline-block;
-  background-image: url("../../images/icones/utensils-solid.svg");
-  background-size: 1.5rem 1.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-right: 1.2rem;
-  transform: translateY(0px);
-}
-footer ul li:nth-child(2) a::before {
-  content: "";
-  display: inline-block;
-  background-image: url("../../images/icones/hands-helping-solid.svg");
-  background-size: 1.5rem 1.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-right: 1.2rem;
-  transform: translateY(2px);
-}
-footer ul li a {
-  color: #fff;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=accueil.css.map */
