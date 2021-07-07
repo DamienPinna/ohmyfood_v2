@@ -28,6 +28,7 @@ h1,
 h2,
 h3,
 ol,
+span,
 p {
   font-family: $font-family-roboto;
 }
@@ -182,12 +183,24 @@ aside {
       border-radius: 10px;
       color: inherit;
       background-color: #fff;
+      position: relative;
 
       .card-img {
         height: 19.2rem;
         width: 100%;
         border-radius: 10px 10px 0 0;
         object-fit: cover;
+        object-position: bottom;
+      }
+
+      .card-badge {
+        background-color: $tertiary-color;
+        padding: 0.6rem 1.1rem;
+        color: $green-dark;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        border-radius: 0.425rem;
       }
 
       .card-footer {

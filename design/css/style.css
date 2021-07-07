@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 ol,
+span,
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -169,12 +170,23 @@ aside .localisation {
   border-radius: 10px;
   color: inherit;
   background-color: #fff;
+  position: relative;
 }
 .restaurants .cards .card .card-img {
   height: 19.2rem;
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+  object-position: bottom;
+}
+.restaurants .cards .card .card-badge {
+  background-color: #99e2d0;
+  padding: 0.6rem 1.1rem;
+  color: #008766;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 0.425rem;
 }
 .restaurants .cards .card .card-footer {
   display: flex;
