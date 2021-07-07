@@ -201,6 +201,7 @@ aside .localisation {
 }
 .restaurants .cards .card .card-footer .card-favorite input:checked + label::before {
   opacity: 0;
+  transition: opacity 0.5s;
 }
 .restaurants .cards .card .card-footer .card-favorite label {
   cursor: pointer;
