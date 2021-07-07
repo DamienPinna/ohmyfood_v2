@@ -156,7 +156,7 @@ aside .localisation {
 }
 
 .restaurants {
-  padding: 4.9rem 1.5rem;
+  padding: 4.9rem 1.5rem 6.8rem 1.5rem;
   background-color: #f6f6f6;
 }
 .restaurants h2 {
@@ -165,6 +165,7 @@ aside .localisation {
 .restaurants .cards {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 2rem;
 }
 .restaurants .cards .card {
   border-radius: 10px;
@@ -178,6 +179,9 @@ aside .localisation {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: bottom;
+}
+.restaurants .cards .card .card-img-2 {
+  object-position: center;
 }
 .restaurants .cards .card .card-badge {
   background-color: #99e2d0;

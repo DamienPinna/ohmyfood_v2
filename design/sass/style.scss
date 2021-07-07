@@ -168,7 +168,7 @@ aside {
 // RESTAURANTS
 
 .restaurants {
-  padding: 4.9rem 1.5rem;
+  padding: 4.9rem 1.5rem 6.8rem 1.5rem;
   background-color: $background-grey-light;
 
   h2 {
@@ -178,6 +178,7 @@ aside {
   .cards {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
 
     .card {
       border-radius: 10px;
@@ -191,6 +192,10 @@ aside {
         border-radius: 10px 10px 0 0;
         object-fit: cover;
         object-position: bottom;
+
+        &-2 {
+          object-position: center;
+        }
       }
 
       .card-badge {
