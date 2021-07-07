@@ -61,6 +61,7 @@ footer ul li:nth-child(2) a::before {
 }
 footer ul li a {
   color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -68,7 +69,6 @@ h2,
 h3,
 ol,
 span,
-a,
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -126,6 +126,7 @@ aside .localisation {
 }
 .hero-header .btn a {
   color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 .fonctionnement {

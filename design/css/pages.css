@@ -76,6 +76,77 @@ footer ul li:nth-child(2) a::before {
 }
 footer ul li a {
   color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-header img {
+  width: 100%;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
+  position: relative;
+  margin-top: -4rem;
+  border-radius: 4rem 4rem 0 0;
+}
+main .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+main .title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.8rem;
+  font-weight: lighter;
+}
+main .title .favorite {
+  display: flex;
+  align-items: center;
+}
+main .title .favorite input {
+  display: none;
+}
+main .title .favorite input:checked + label {
+  content: "";
+  display: block;
+  background-image: url(../../images/icones/heart-solid.svg);
+  background-size: 2.8rem 2.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-right: 2.2rem;
+}
+main .title .favorite input:checked + label::before {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+main .title .favorite label {
+  cursor: pointer;
+}
+main .title .favorite label::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/icones/heart-regular.svg);
+  background-size: 2.8rem 2.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-right: 2.2rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 3.9rem;
+  height: 0.3rem;
+  background-color: #99e2d0;
+  margin-top: 0.3rem;
 }
 
 /*# sourceMappingURL=pages.css.map */

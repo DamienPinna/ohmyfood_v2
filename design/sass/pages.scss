@@ -3,3 +3,88 @@
 @import "mixins";
 @import "header-pages";
 @import "footer";
+
+// HERO-HEADER
+
+.hero-header {
+  img {
+    width: 100%;
+  }
+}
+
+// MAIN
+
+main {
+  font-family: $font-family-roboto;
+  background-color: $background-grey-light;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
+  position: relative;
+  margin-top: -4rem;
+  border-radius: 4rem 4rem 0 0;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    h1 {
+      font-family: $font-family-shrikhand;
+      font-size: 2.8rem;
+      font-weight: lighter;
+    }
+
+    .favorite {
+      display: flex;
+      align-items: center;
+
+      input {
+        display: none;
+
+        &:checked + label {
+          content: "";
+          display: block;
+          background-image: url(../../images/icones/heart-solid.svg);
+          background-size: 2.8rem 2.8rem;
+          height: 2.8rem;
+          width: 2.8rem;
+          margin-right: 2.2rem;
+
+          &::before {
+            opacity: 0;
+            transition: opacity 0.5s;
+          }
+        }
+      }
+
+      label {
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          display: block;
+          background-image: url(../../images/icones/heart-regular.svg);
+          background-size: 2.8rem 2.8rem;
+          height: 2.8rem;
+          width: 2.8rem;
+          margin-right: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 3.9rem;
+    height: 0.3rem;
+    background-color: $tertiary-color;
+    margin-top: 0.3rem;
+  }
+}
