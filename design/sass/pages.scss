@@ -19,8 +19,8 @@ main {
   background-color: $background-grey-light;
   padding: 2.5rem 1.5rem 4rem 1.5rem;
   position: relative;
-  margin-top: -4rem;
-  border-radius: 4rem 4rem 0 0;
+  margin-top: -5rem;
+  border-radius: 40px 40px 0 0;
 
   .title {
     display: flex;
@@ -73,18 +73,50 @@ main {
   }
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  margin-bottom: 2rem;
+form {
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 3.9rem;
-    height: 0.3rem;
-    background-color: $tertiary-color;
-    margin-top: 0.3rem;
+    &::after {
+      content: "";
+      display: block;
+      width: 3.9rem;
+      height: 0.3rem;
+      background-color: $tertiary-color;
+      margin-top: 0.3rem;
+    }
+  }
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 1rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+
+    div:first-child {
+      white-space: nowrap;
+      overflow: hidden;
+
+      h3 {
+        margin-bottom: 0.5rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      aside {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    .prix {
+      align-self: flex-end;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
   }
 }
