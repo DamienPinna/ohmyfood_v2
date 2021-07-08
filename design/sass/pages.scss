@@ -17,7 +17,7 @@
 main {
   font-family: $font-family-roboto;
   background-color: $background-grey-light;
-  padding: 2.5rem 1.5rem 4rem 1.5rem;
+  padding: 2.5rem 1.5rem 7rem 1.5rem;
   position: relative;
   margin-top: -5rem;
   border-radius: 40px 40px 0 0;
@@ -130,6 +130,23 @@ form {
       align-self: flex-end;
       font-weight: bold;
       font-size: 1.5rem;
+    }
+  }
+
+  input {
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: block;
+    margin: 4rem auto 0 auto;
+    border: none;
+    padding: 1.5rem 4rem;
+    border-radius: 23px;
+    background: linear-gradient(176deg, $secondary-color, $primary-color);
+    color: #fff;
+    box-shadow: $box-shadow;
+
+    &:hover {
+      filter: brightness(105%);
     }
   }
 }
