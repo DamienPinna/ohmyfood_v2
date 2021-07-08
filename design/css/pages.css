@@ -134,11 +134,22 @@ main .title .favorite label::before {
   margin-right: 2.2rem;
 }
 
+form .entrees,
+form .plats,
+form .desserts {
+  margin-bottom: 3.5rem;
+}
+form .entrees input,
+form .plats input,
+form .desserts input {
+  position: absolute;
+  left: -9999px;
+}
 form h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: lighter;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 form h2::after {
   content: "";
@@ -154,6 +165,8 @@ form label {
   padding: 1rem 2rem 1rem 1rem;
   background-color: #fff;
   border-radius: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 2px 5px 2px #ccc;
 }
 form label div:first-child {
   white-space: nowrap;
