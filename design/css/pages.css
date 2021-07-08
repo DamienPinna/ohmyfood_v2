@@ -169,6 +169,12 @@ form label {
   overflow: hidden;
   cursor: pointer;
 }
+form label:hover .selection {
+  margin-right: -2rem;
+}
+form label:hover .selection .logo-check {
+  transform: rotate(0deg);
+}
 form label div:first-child {
   white-space: nowrap;
   overflow: hidden;
@@ -190,11 +196,12 @@ form label .prix {
 }
 form label .selection {
   background-color: #99e2d0;
-  margin: -1rem -2rem -1rem 1rem;
+  margin: -1rem -8.1rem -1rem 2rem;
   display: flex;
   align-items: center;
+  transition-duration: 0.5s;
 }
-form label .selection .check {
+form label .selection .logo-check {
   height: 2.1rem;
   width: 2.1rem;
   margin: 0 2rem;
@@ -203,8 +210,10 @@ form label .selection .check {
   justify-content: center;
   border-radius: 50%;
   transition-duration: 0.5s;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
-form label .selection .check img {
+form label .selection .logo-check img {
   width: 1.5rem;
 }
 form input {
