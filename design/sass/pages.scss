@@ -1,6 +1,7 @@
 @import "config";
 @import "variables";
 @import "mixins";
+@import "animations";
 @import "header-pages";
 @import "footer";
 
@@ -82,6 +83,50 @@ form {
     input {
       position: absolute;
       left: -9999px;
+
+      &:checked + label .selection {
+        margin-right: -2rem;
+      }
+
+      &:checked + label .logo-check {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .entree- {
+    &1 {
+      animation-delay: 0s;
+    }
+    &2 {
+      animation-delay: 0.1s;
+    }
+    &3 {
+      animation-delay: 0.2s;
+    }
+  }
+
+  .plat- {
+    &1 {
+      animation-delay: 0.5s;
+    }
+    &2 {
+      animation-delay: 0.6s;
+    }
+    &3 {
+      animation-delay: 0.7s;
+    }
+  }
+
+  .dessert- {
+    &1 {
+      animation-delay: 0.8s;
+    }
+    &2 {
+      animation-delay: 0.9s;
+    }
+    &3 {
+      animation-delay: 1s;
     }
   }
 
@@ -110,14 +155,11 @@ form {
     box-shadow: $box-shadow;
     overflow: hidden;
     cursor: pointer;
-
-    &:hover .selection {
-      margin-right: -2rem;
-    }
-
-    &:hover .selection .logo-check {
-      transform: rotate(0deg);
-    }
+    animation-name: itemAppear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: translateY(20px);
+    opacity: 0;
 
     div:first-child {
       white-space: nowrap;
