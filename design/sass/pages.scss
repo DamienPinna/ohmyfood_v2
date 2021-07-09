@@ -10,6 +10,8 @@
 .hero-header {
   img {
     width: 100%;
+    max-height: 25.36rem;
+    object-fit: cover;
   }
 }
 
@@ -94,7 +96,7 @@ form {
     }
   }
 
-  .entree- {
+  .delay- {
     &1 {
       animation-delay: 0s;
     }
@@ -104,29 +106,26 @@ form {
     &3 {
       animation-delay: 0.2s;
     }
-  }
-
-  .plat- {
-    &1 {
+    &4 {
+      animation-delay: 0.3s;
+    }
+    &5 {
+      animation-delay: 0.4s;
+    }
+    &6 {
       animation-delay: 0.5s;
     }
-    &2 {
+    &7 {
       animation-delay: 0.6s;
     }
-    &3 {
+    &8 {
       animation-delay: 0.7s;
     }
-  }
-
-  .dessert- {
-    &1 {
+    &9 {
       animation-delay: 0.8s;
     }
-    &2 {
+    &10 {
       animation-delay: 0.9s;
-    }
-    &3 {
-      animation-delay: 1s;
     }
   }
 
