@@ -8,10 +8,20 @@
 // HERO-HEADER
 
 .hero-header {
+  max-width: 150rem;
+  margin: 0 auto;
   img {
     width: 100%;
-    max-height: 25.36rem;
+    height: 22.536rem;
     object-fit: cover;
+
+    @include breackpoint(500px) {
+      height: 30rem;
+    }
+
+    @include breackpoint(1000px) {
+      height: 35rem;
+    }
   }
 }
 
@@ -24,6 +34,12 @@ main {
   position: relative;
   margin-top: -5rem;
   border-radius: 40px 40px 0 0;
+  max-width: 70rem;
+
+  @include breackpoint(700px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .title {
     display: flex;

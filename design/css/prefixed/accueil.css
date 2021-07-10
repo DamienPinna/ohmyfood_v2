@@ -1,0 +1,344 @@
+/* CONFIG NAVIGATEUR */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+footer {
+  padding: 2.5rem 1.5rem;
+  color: #fff;
+  background-color: #353535;
+}
+@media screen and (min-width: 900px) {
+  footer {
+    padding: 2.5rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    padding: 2.5rem 22%;
+  }
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+}
+footer ul li {
+  margin-bottom: 0.8rem;
+}
+footer ul li:nth-child(1) a::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/utensils-solid.svg");
+  background-size: 1.5rem 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1.2rem;
+  transform: translateY(0px);
+}
+footer ul li:nth-child(2) a::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/hands-helping-solid.svg");
+  background-size: 1.5rem 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1.2rem;
+  transform: translateY(2px);
+}
+footer ul li a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+ol,
+span,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  padding: 1.4rem 2.2rem;
+  border-radius: 23px;
+  background: linear-gradient(176deg, #ff79da, #9356dc);
+  color: #fff;
+  box-shadow: 0px 2px 5px 2px #ccc;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1.5rem 0;
+}
+header img {
+  width: 16rem;
+}
+
+aside {
+  padding: 1.5rem 0;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 11px 8px -10px #ccc;
+}
+aside .icone-map {
+  width: 1.2rem;
+  position: absolute;
+  margin-left: calc(50% - 8.1rem);
+}
+aside .localisation {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-header {
+  padding: 4.9rem 4rem;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.hero-header h1 {
+  margin-bottom: 1.5rem;
+}
+.hero-header p {
+  margin-bottom: 4rem;
+}
+.hero-header .btn {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.hero-header .btn:hover {
+  filter: brightness(105%);
+}
+.hero-header .btn a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.fonctionnement {
+  margin: 4.9rem 1.5rem 6.5rem 1.5rem;
+}
+@media screen and (min-width: 900px) {
+  .fonctionnement {
+    margin: 4.9rem 10% 6.5rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .fonctionnement {
+    margin: 4.9rem 25% 6.5rem 25%;
+  }
+}
+.fonctionnement h2 {
+  margin-bottom: 2.5rem;
+}
+.fonctionnement ol {
+  margin-left: 1rem;
+  position: relative;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media screen and (min-width: 600px) {
+  .fonctionnement ol {
+    margin: 0 5%;
+  }
+}
+.fonctionnement ol span {
+  position: absolute;
+  color: #fff;
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 0.6rem;
+  transform: translateX(-13px);
+  margin-top: 1.7rem;
+  font-size: 1.2rem;
+}
+.fonctionnement ol li {
+  padding: 2rem 0 2rem 3rem;
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 2px 5px 2px #ccc;
+}
+.fonctionnement ol li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/mobile-alt-solid.svg");
+  background-size: 1.7rem 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+  transform: translateY(2px);
+}
+.fonctionnement ol li:nth-child(4)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/list-ul-solid.svg");
+  background-size: 1.7rem 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+  transform: translateY(2px);
+}
+.fonctionnement ol li:nth-child(6)::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/icones/store-solid.svg");
+  background-size: 1.7rem 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+  transform: translateY(2px);
+}
+.fonctionnement ol li:nth-child(6) {
+  background-color: #f5edff;
+}
+
+.restaurants {
+  padding: 4.9rem 1.5rem 6.8rem 1.5rem;
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 900px) {
+  .restaurants {
+    padding: 4.9rem 10% 6.8rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .restaurants {
+    padding: 4.9rem 22% 6.8rem 22%;
+  }
+}
+.restaurants h2 {
+  margin-bottom: 2.5rem;
+}
+.restaurants .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .restaurants .cards {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.restaurants .cards .card {
+  border-radius: 10px;
+  color: inherit;
+  background-color: #fff;
+  position: relative;
+}
+.restaurants .cards .card .card-img {
+  height: 19.2rem;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.restaurants .cards .card .card-img-2 {
+  -o-object-position: center;
+     object-position: center;
+}
+@media screen and (min-width: 600px) {
+  .restaurants .cards .card .card-img {
+    -o-object-position: initial;
+       object-position: initial;
+  }
+}
+@media screen and (min-width: 800px) {
+  .restaurants .cards .card .card-img {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .restaurants .cards .card .card-img-2 {
+    -o-object-position: initial;
+       object-position: initial;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .restaurants .cards .card .card-img {
+    -o-object-position: initial;
+       object-position: initial;
+  }
+}
+.restaurants .cards .card .card-badge {
+  background-color: #99e2d0;
+  padding: 0.6rem 1.1rem;
+  color: #008766;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 0.425rem;
+}
+.restaurants .cards .card .card-footer {
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-between;
+}
+.restaurants .cards .card .card-footer .card-content {
+  font-family: "Roboto", sans-serif;
+}
+.restaurants .cards .card .card-footer .card-favorite {
+  display: flex;
+  align-items: center;
+}
+.restaurants .cards .card .card-footer .card-favorite input {
+  display: none;
+}
+.restaurants .cards .card .card-footer .card-favorite input:checked + label {
+  content: "";
+  display: block;
+  background-image: url(../../images/icones/heart-solid.svg);
+  background-size: 2.8rem 2.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.restaurants .cards .card .card-footer .card-favorite input:checked + label::before {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.restaurants .cards .card .card-footer .card-favorite label {
+  cursor: pointer;
+}
+.restaurants .cards .card .card-footer .card-favorite label::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/icones/heart-regular.svg);
+  background-size: 2.8rem 2.8rem;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvX2NvbmZpZy5zY3NzIiwiLi4vYWNjdWVpbC5jc3MiLCIuLi8uLi9zYXNzL19mb290ZXIuc2NzcyIsIi4uLy4uL3Nhc3MvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vLi4vc2Fzcy9fbWl4aW5zLnNjc3MiLCIuLi8uLi9zYXNzL2FjY3VlaWwuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFBQTtBQUVBOzs7RUFHRSxTQUFTO0VBQ1QsVUFBVTtFQUNWLG1CQUFtQjtBQ0FyQjs7QURHQTtFQUNFLHNCQUFzQjtFQUN0QixnQkFBZ0I7QUNBbEI7O0FER0E7RUFDRSxpQkFBaUI7QUNBbkI7O0FER0E7RUFDRSxxQkFBcUI7QUNBdkI7O0FER0E7O0VBRUUscUJBQXFCO0FDQXZCOztBQ3RCQTtFQUNFLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gseUJDR3lDO0FGc0IzQztBR2pCRTtFRlhGO0lBTUksbUJBQW1CO0VEMEJyQjtBQUNGO0FHdEJFO0VGWEY7SUFVSSxtQkFBbUI7RUQyQnJCO0FBQ0Y7QUN6QkU7RUFDRSxpQ0NGd0M7RURHeEMsb0JBQW9CO0VBQ3BCLHFCQUFxQjtFQUNyQixpQkFBaUI7QUQyQnJCO0FDdkJJO0VBQ0UscUJBQXFCO0FEeUIzQjtBQ3ZCTTtFRXpCSixXQUFXO0VBQ1gscUJBQXFCO0VBQ3JCLCtEQUEyQjtFQUMzQiw4QkFBc0M7RUFDdEMsY0Z3QmM7RUV2QmQsYUZ1QmM7RUV0QmQsb0JGdUJjO0VFdEJkLDBCQUFrQztBSG1EcEM7QUN4Qk07RUVsQ0osV0FBVztFQUNYLHFCQUFxQjtFQUNyQixvRUFBMkI7RUFDM0IsOEJBQXNDO0VBQ3RDLGNGaUNjO0VFaENkLGFGZ0NjO0VFL0JkLG9CRmdDYztFRS9CZCwwQkFBa0M7QUg2RHBDO0FDekJNO0VBQ0UsV0FBVztFQUNYLGlDQ2pDaUM7QUY0RHpDOztBSXBFQTs7Ozs7O0VBTUUsaUNGRXVDO0FGcUV6Qzs7QUlwRUE7RUFDRSxzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25C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 */
