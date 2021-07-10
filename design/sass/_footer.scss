@@ -1,9 +1,18 @@
+@import "mixins";
 // FOOTER
 
 footer {
   padding: 2.5rem 1.5rem;
   color: #fff;
   background-color: $background-grey-very-dark;
+
+  @include breackpoint(900px) {
+    padding: 2.5rem 10%;
+  }
+
+  @include breackpoint(1400px) {
+    padding: 2.5rem 22%;
+  }
 
   h4 {
     font-family: $font-family-shrikhand;

@@ -55,6 +55,16 @@ footer {
   color: #fff;
   background-color: #353535;
 }
+@media screen and (min-width: 900px) {
+  footer {
+    padding: 2.5rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    padding: 2.5rem 22%;
+  }
+}
 footer h4 {
   font-family: "Shrikhand", cursive;
   font-weight: lighter;

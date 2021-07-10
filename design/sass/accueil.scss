@@ -87,6 +87,14 @@ aside {
 .fonctionnement {
   margin: 4.9rem 1.5rem 6.5rem 1.5rem;
 
+  @include breackpoint(900px) {
+    margin: 4.9rem 10% 6.5rem 10%;
+  }
+
+  @include breackpoint(1400px) {
+    margin: 4.9rem 25% 6.5rem 25%;
+  }
+
   h2 {
     margin-bottom: 2.5rem;
   }
@@ -96,6 +104,10 @@ aside {
     position: relative;
     font-weight: bold;
     user-select: none;
+
+    @include breackpoint(600px) {
+      margin: 0 5%;
+    }
 
     span {
       position: absolute;
@@ -158,6 +170,14 @@ aside {
   padding: 4.9rem 1.5rem 6.8rem 1.5rem;
   background-color: $background-grey-light;
 
+  @include breackpoint(900px) {
+    padding: 4.9rem 10% 6.8rem 10%;
+  }
+
+  @include breackpoint(1400px) {
+    padding: 4.9rem 22% 6.8rem 22%;
+  }
+
   h2 {
     margin-bottom: 2.5rem;
   }
@@ -166,6 +186,11 @@ aside {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
+
+    @include breackpoint(800px) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
 
     .card {
       border-radius: 10px;
@@ -182,6 +207,22 @@ aside {
 
         &-2 {
           object-position: center;
+        }
+
+        @include breackpoint(600px) {
+          object-position: initial;
+        }
+
+        @include breackpoint(800px) {
+          object-position: bottom;
+
+          &-2 {
+            object-position: initial;
+          }
+        }
+
+        @include breackpoint(1140px) {
+          object-position: initial;
         }
       }
 

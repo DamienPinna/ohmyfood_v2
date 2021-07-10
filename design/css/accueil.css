@@ -30,6 +30,16 @@ footer {
   color: #fff;
   background-color: #353535;
 }
+@media screen and (min-width: 900px) {
+  footer {
+    padding: 2.5rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    padding: 2.5rem 22%;
+  }
+}
 footer h4 {
   font-family: "Shrikhand", cursive;
   font-weight: lighter;
@@ -132,6 +142,16 @@ aside .localisation {
 .fonctionnement {
   margin: 4.9rem 1.5rem 6.5rem 1.5rem;
 }
+@media screen and (min-width: 900px) {
+  .fonctionnement {
+    margin: 4.9rem 10% 6.5rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .fonctionnement {
+    margin: 4.9rem 25% 6.5rem 25%;
+  }
+}
 .fonctionnement h2 {
   margin-bottom: 2.5rem;
 }
@@ -140,6 +160,11 @@ aside .localisation {
   position: relative;
   font-weight: bold;
   user-select: none;
+}
+@media screen and (min-width: 600px) {
+  .fonctionnement ol {
+    margin: 0 5%;
+  }
 }
 .fonctionnement ol span {
   position: absolute;
@@ -199,6 +224,16 @@ aside .localisation {
   padding: 4.9rem 1.5rem 6.8rem 1.5rem;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 900px) {
+  .restaurants {
+    padding: 4.9rem 10% 6.8rem 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .restaurants {
+    padding: 4.9rem 22% 6.8rem 22%;
+  }
+}
 .restaurants h2 {
   margin-bottom: 2.5rem;
 }
@@ -206,6 +241,12 @@ aside .localisation {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .restaurants .cards {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 .restaurants .cards .card {
   border-radius: 10px;
@@ -222,6 +263,24 @@ aside .localisation {
 }
 .restaurants .cards .card .card-img-2 {
   object-position: center;
+}
+@media screen and (min-width: 600px) {
+  .restaurants .cards .card .card-img {
+    object-position: initial;
+  }
+}
+@media screen and (min-width: 800px) {
+  .restaurants .cards .card .card-img {
+    object-position: bottom;
+  }
+  .restaurants .cards .card .card-img-2 {
+    object-position: initial;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .restaurants .cards .card .card-img {
+    object-position: initial;
+  }
 }
 .restaurants .cards .card .card-badge {
   background-color: #99e2d0;
